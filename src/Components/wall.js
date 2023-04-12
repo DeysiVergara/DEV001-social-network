@@ -18,7 +18,7 @@ export const Muro = (onNavigate) => {
   const btnDelete = document.createElement('button');
   newCommentBox.setAttribute('id', 'containerComment'); // se agrega un atributo de clase a un elemento element.setAttribute(name, value)
 
-  wallMenu.textContent = 'EXPERIENCIAS Y COMENTARIOS';
+  wallMenu.textContent = 'PUBLICACIONES';
   postButton.textContent = 'PUBLICAR';
   signOutButton.textContent = 'CERRAR SESIÓN';
 

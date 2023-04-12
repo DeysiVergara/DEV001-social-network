@@ -15,4 +15,13 @@ describe('sign', () => {
     sign();
     expect(signInWithEmailAndPassword).toHaveBeenCalled();
   });
+
+  it('deberia llamar correctamente createUserWithEmailAndPassword', () => {
+    signInWithEmailAndPassword.mockImplementationOnce((auth, email, password) => {
+      expect(email).toBe('test@test.test');
+      expect(password).toBe('123');
+      // return Promise.resolve({ user: { email, password } });
+    });
+    sign('test@test.test', '123');
+  });
 });
